@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器之并集选择器</title>
+    <style>
+        /*并集选择器是用英文逗号（，）连接而成，任何形式的选择器都可以并集，语法是元素1，元素2{样式说明}*/
+        /*要求1：把熊大和熊二改为粉色*/
+      /*div,*/
+      /*p{*/
+      /*     color: pink;*/
+      /* }*/
+        /*要求2：把熊大和熊二改为红色 还有皇帝一家改为粉色*/
+        div,
+        p,
+        .people li{
+            color: pink;
+        }
+    /*约定的语法规范，我们并集选择器喜欢竖着写*/
+    /*    一定要注意，最后一个选择不喜欢加逗号*/
+    </style>
+</head>
+<body>
+<div>熊大</div>
+<p>熊二</p
+<span>光头强</span>
+<ul class="people">
+    <li>太子</li>
+    <li>皇帝</li>
+    <li>皇后</li>
+</ul>
+</body>
+</html>
