@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器之后代选择器</title>
+    <style>
+        /*元素1和元素2中间用空格隔开*/
+        /*元素1是父亲，元素2是子级，最终选择是元素2*/
+        /*元素2可以是儿子，也可以是孙子，只要是元素1的后代就可以*/
+        /*我想要把ol里面的小li选出来改为pink*/
+        ol li{
+            color: pink;
+
+        }
+        ol li a{
+            color: red;
+        }
+        .nav li a{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    文案示例
+    <li>我是ol 的孩子</li>
+    <li>我是ol 的孩子</li>
+    <li><a href="#">我是sun子</a></li>
+</ol>
+<ul>
+    <li>我是ul 的孩子</li>
+    <li>我是ul 的孩子</li>
+    <li><a href="#">不会变化的</a></li>
+</ul>
+<ul class="nav">
+    <li>我是ul 的孩子</li>
+    <li>我是ul 的孩子</li>
+    <li><a href="#">想要变成紫色</a></li>
+    <li><a href="#">想要变成紫色</a></li>
+    <li><a href="#">想要变成紫色</a></li>
+
+</ul>
+</body>
+</html>
