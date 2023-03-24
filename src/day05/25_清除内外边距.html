@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除内外边距</title>
+    <style>
+        /*这句话也是我们css 的第一行代码*/
+        *{
+            /*清除外边距*/
+            margin: 0;
+            /*清除内边距*/
+            padding: 0;
+        }
+        /*注意：行内元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下内外边距。但是转换为块级和内快元素就可以了*/
+        span{
+            background-color: pink;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+123
+<ul>
+    <li>abcd</li>
+</ul>
+<span>行内元素尽量只设置左右的内外边距</span>
+</body>
+</html>
