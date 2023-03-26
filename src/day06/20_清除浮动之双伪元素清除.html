@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动之双伪元素清除</title>
+    <style>
+        .clearfix:before,
+        .clearfix:after{
+            content: "";
+            display: table;
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        .clearfix{
+            *zoom:1
+        }
+        .box{
+            width: 800px;
+            border: 1px solid blue;
+            margin:0 auto;
+        }
+        .damao{
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .ermao{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #ff6700;
+        }
+        .footer{
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="box clearfix">
+    <div class="damao">damoa</div>
+    <div class="ermao">ermao</div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
