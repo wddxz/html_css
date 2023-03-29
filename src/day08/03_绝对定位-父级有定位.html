@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位-父级有定位</title>
+    <style>
+        .yeye{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: purple;
+            padding: 100px;
+        }
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .son{
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="yeye">
+<div class="father">
+    <div class="son"></div></div>
+</div>
+</body>
+</html>
