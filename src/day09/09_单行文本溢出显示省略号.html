@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单行文本溢出显示省略号</title>
+    <style>
+        div{
+            width: 150px;
+            height: 80px;
+            background-color: skyblue;
+            margin: 100px auto;
+            /* 这个单词的意思是如果文字显示不开自动换行 */
+            /*white-space: normal;*/
+            /* 1.这个单词的意思是如果文字显示不开也必须强制一行内显示 */
+            white-space: nowrap;
+            /* 2.溢出的部分隐藏起来 */
+            overflow: hidden;
+            /* 3. 文字溢出的时候用省略号来显示 */
+            text-overflow:ellipsis ;
+        }
+    </style>
+</head>
+<body>
+<div>
+    我对肖战的喜欢一万句也说不完他的好，放弃很容易，但坚持实在太酷了，此处省略一万字
+</div>
+</body>
+</html>
